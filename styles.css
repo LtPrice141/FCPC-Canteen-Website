@@ -93,7 +93,7 @@ body::before {
 .loader-text {
     font-family: 'Belgiano Serif', sans-serif; 
     color: #A58670;
-    font-size: 2rem;
+    font-size: 1rem;
     letter-spacing: 1px;
     margin-top: -50px;
     animation: pulse 1.5s infinite ease-in-out;
