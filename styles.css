@@ -66,8 +66,8 @@ body::before {
 /* ================= LOADER ================= */
 #loader-wrapper {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50;
+    left: 50;
     width: 100%;
     height: 100%;
     background-color: #FFFAFC;
@@ -93,7 +93,7 @@ body::before {
 .loader-text {
     font-family: 'Belgiano Serif', sans-serif; 
     color: #A58670;
-    font-size: 1rem;
+    font-size: 1.5rem;
     letter-spacing: 1px;
     margin-top: -50px;
     animation: pulse 1.5s infinite ease-in-out;
