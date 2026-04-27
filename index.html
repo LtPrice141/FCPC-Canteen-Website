@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCPC | School Canteen</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
+    <link rel="icon" type="image/ico" href="./Assets/favicon.ico">    
+</head>
+<body>
+    <!-- ================= LOADER ================= -->
+    <div id="loader-wrapper">
+        <div class="loader-content">
+            <img src="Assets/loader-v2.gif" alt="Loading..." class="loader-gif">
+            <p class="loader-text">cooking up something for you. . .</p>
+        </div>
+    </div>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <!-- Left Side -->
+        <div class="nav-left">
+            <div class="logo">
+                <img src="Assets/Logos/FCPC Logo - Landscape.png" alt="School Logo">
+            </div>
+
+            <nav>  
+                <a href="#menu">Today's Menu</a>
+                <a href="#" data-modal="feedback">Feedback</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+
+        <!-- ================= MOBILE NAVBAR ================= -->
+        <div class="nav-menu" id="navMenu">
+            <nav>  
+                <a href="#menu">Today's Menu</a>
+                <a href="#" data-modal="feedback">Feedback</a>
+                <a href="#contact">Contact</a>
+                <a href="#" data-modal="signin">Sign In</a>
+                <a href="#" data-modal="request">Dish Requests!</a>
+            </nav>
+        </div>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+            <a href="#" data-modal="signin">Sign In</a>
+            <a href="#" class="order-btn" data-modal="request">Dish Requests!</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+        <h1>Taste of Home, Fresh Daily</h1>
+
+        <!-- Featured Image -->
+        <div class="hero-image">
+            <img src="/Assets/Dish Images/Featured Dish 2.png" alt="Featured Dish">
+        </div>
+
+        <!-- Description -->
+        <div class="hero-text">
+            <h2><span class= 'highlight'>Featured Dish:</span> Chicken Adobo</h2>
+            <p>Bringing the soul of Filipino kitchens to your table <br> with our signature Chicken Adobo. Simple ingredients, legendary flavor.</p>
+            <button class="button">
+                <div><span>Learn More</span></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- ================= MODALS ================= -->
+
+    <!-- Sign In -->
+    <div class="modal" id="signinModal">
+        <div class="modal-box">
+            <span class="close">&times;</span>
+            <h2>Sign In</h2>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button class="button">
+                <div><span>Submit</span></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Dish Request -->
+    <div class="modal" id="requestModal">
+        <div class="modal-box">
+            <span class="close">&times;</span>
+            <h2>Dish Request</h2>
+            <input type="text" placeholder="Dish Name">
+            <textarea placeholder="Details"></textarea>
+            <button class="button">
+                <div><span>Submit</span></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- Feedback -->
+    <div class="modal" id="feedbackModal">
+        <div class="modal-box">
+            <span class="close">&times;</span>
+            <h2>Feedback</h2>
+            <textarea placeholder="Your feedback"></textarea>
+            <button class="button">
+                <div><span>Submit</span></div>
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= MENU ================= -->
+    <section class="menu" id="menu">
+        <h2>Today's Menu:</h2>
+
+        <div class="menu-grid cards">
+
+            <!-- Card 1 -->
+            <div class="card reveal">
+                <span class="badge">Hot Seller</span>
+                <img src="/Assets/Dish Images/Chicken Adobo.png" alt="">
+                <h3>Chicken Adobo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱120</span>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card reveal">
+                <span class="badge">New</span>
+                <img src="/Assets/Dish Images/Pork Sinigang.png" alt="">
+                <h3>Pork Sinigang</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱150</span>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card reveal">
+                <span class="badge">Hot Seller</span>
+                <img src="/Assets/Dish Images/Kare Kare.png" alt="">
+                <h3>Kare-Kare</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱160</span>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card reveal">
+                <span class="badge">New</span>
+                <img src="/Assets/Dish Images/Pancit Guisado.png" alt="">
+                <h3>Pancit Guisado</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱100</span>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card reveal">
+                <span class="badge">Hot Seller</span>
+                <img src="/Assets/Dish Images/Lumpiang Shanghai.png" alt="">
+                <h3>Lumpiang Shanghai</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱90</span>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card reveal">
+                <span class="badge">New</span>
+                <img src="/Assets/Dish Images/Beef Kaldereta.png" alt="">
+                <h3>Beef Kaldereta</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱80</span>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card reveal">
+                <span class="badge">New</span>
+                <img src="/Assets/Dish Images/Maja Blanca.png" alt="">
+                <h3>Maja Blanca</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱80</span>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card reveal">
+                <span class="badge">New</span>
+                <img src="/Assets/Dish Images/Halo Halo.png" alt="">
+                <h3>Halo-Halo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱80</span>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card reveal">
+                <span class="badge">New</span>
+                <img src="/Assets/Dish Images/Buko Pandan.png" alt="">
+                <h3>Buko Pandan</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <span class="price">₱80</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+
+        <div class="contact-container">
+
+            <!-- Left: Info -->
+            <div class="contact-info">
+                <p><strong>Email:</strong> canteen@example.com</p>
+                <p><strong>Phone:</strong> +63 912 345 6789</p>
+                <p><strong>Location:</strong> First City Providential College, CSJDM, Bulacan</p>
+            </div>
+
+            <!-- Right: Form -->
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="4" required></textarea>
+                <button class="button">
+                    <div><span>Send Message</span></div>
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Left: Branding -->
+        <div class="footer-brand">
+            <h3>FCPC | School Canteen</h3>
+            <p>Taste of Home, Fresh Daily</p>
+        </div>
+
+        <!-- Middle: Image -->
+        <div class="footer-logo">
+            <img src="Assets/Logos/FCPC Logo - Badge.png">
+        </div>
+
+        <!-- Right: Info -->
+        <div class="footer-info">
+            <p>Email: canteen@example.com</p>
+            <p>Phone: +63 912 345 6789</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        <p>© 2026 FCPC | School Canteen. All rights reserved.</p>
+    </div>
+</footer>
+</html>
