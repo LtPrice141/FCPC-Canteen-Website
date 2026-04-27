@@ -13,6 +13,7 @@ revealElements.forEach(el => observer.observe(el));
 
 
 // ================= LOADER =================
+document.body.classList.add("loading");
 window.addEventListener("load", () => {
     const loader = document.getElementById("loader-wrapper");
 
@@ -21,6 +22,7 @@ window.addEventListener("load", () => {
 
         setTimeout(() => {
             loader.style.display = "none";
+            document.body.classList.remove("loading");
         }, 800);
     }, 1000); // milliseconds bud
 });
