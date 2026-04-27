@@ -24,7 +24,7 @@ window.addEventListener("load", () => {
             loader.style.display = "none";
             document.body.classList.remove("loading");
         }, 800);
-    }, 1000); // milliseconds bud
+    }, 1500); // milliseconds bud
 });
 
 

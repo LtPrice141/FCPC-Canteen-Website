@@ -95,7 +95,6 @@ body.loading {
     max-width: 100%;
     height: auto;
     margin-bottom: 20px;
-    outline: 0px solid red;
 
     transform: translateX(-20px);
 }
