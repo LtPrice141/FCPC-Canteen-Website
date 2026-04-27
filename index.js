@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             loader.style.display = "none";
         }, 800);
-    }, 2500); // milliseconds bud
+    }, 1000); // milliseconds bud
 });
 
 
